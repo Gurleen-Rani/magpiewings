@@ -1,0 +1,318 @@
+@import url("https://use.typekit.net/pbe1wrr.css");
+@import url("https://cdn.jsdelivr.net/npm/css.gg/icons/all.css");
+
+body {
+    box-sizing: border-box; 
+    font-family: basic-sans, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    overflow-x: hidden; 
+    margin: 0;
+    font-size: 20px;
+    
+    /* border: 15px solid pink;
+    background-color: pink ; */
+    
+  }
+  .inner-page{
+    box-sizing: border-box;
+    min-height: 96vh;
+    display: block;
+    margin: 0;
+    /* border-radius: 20px; */
+    background-color: hsla(182, 73%, 49%, 0.9);;
+     background-image: 
+    radial-gradient(#ffffff52 10%, transparent 10%),
+    radial-gradient(#ffffff86 10%, transparent 10%);
+    background-position: 0px 0px, 12px 12px;
+    background-size: 24px 24px;
+    background-attachment: fixed;
+    overflow-x: hidden; 
+  }
+
+ /* Nav-Bar */
+  .header{
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    
+    backdrop-filter: blur(10px);
+  }
+  
+  .logo{
+    font-family: gelica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbar a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+
+  }
+
+  .logo img{
+    height: 100px;
+  }
+
+  .logo span{
+    
+    font-size: 20px;
+  }
+  .newNav{
+    display: none;
+  }
+  .navButton{
+    display: none;
+    border: none;
+  }
+  .navButton img{
+    height: 25px;
+  }
+  .navButton img:hover{
+    height: 28px;
+  }
+  .naw-nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+  }
+  .naw-nav-links a{
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    
+  }
+  
+  @media (max-width: 900px){
+    .header{
+      display: none;
+    }
+    .newNav{
+      display: none;
+    }
+    .navButton{
+      display: block;
+    }
+    
+
+  }
+
+  /* into-Page */
+  .intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 400px;
+    
+  }
+  .intro h1{
+    font-size: 70px;
+    font-family: gelica, sans-serif;
+    z-index: 80;
+  }
+  /* Content Page */
+
+  .content{
+    height: 5500px;
+    margin-top: 150px;
+    top: 500px;
+    position: relative;
+    
+  }
+
+  div#parallax-bg-1 {
+    position: absolute;
+    width: 1200px;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 1;
+  }
+  /* background middle layer*/
+  div#parallax-bg-2 {
+    position: absolute;
+    width: 1200px;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 2;
+  }
+  /* background layer */
+  div#parallax-bg-3 {
+    position: absolute;
+    width: 960px;
+    top: 0;
+    left: 50%;
+    margin-left: -470px;
+    z-index: 3;
+  }
+  /* foreground */
+  div#parallax-bg-3 div {
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+  }
+  div#bg-3-1 {
+    background: url("./redballoon2.png");
+    width: 529px;
+    height: 757px;
+    top: -100px;
+    right: 100px;
+  }
+  div#bg-3-2 {
+    background: url("https://greensock.com/_img/codepen/balloon2.png");
+    width: 603px;
+    height: 583px;
+    top: 1050px;
+    left: 70px;
+  }
+  div#bg-3-3 {
+    background: url("https://greensock.com/_img/codepen/balloon1.png");
+    width: 446px;
+    height: 713px;
+    top: 1800px;
+    right: 140px;
+  }
+  div#ground {
+    background: url("https://greensock.com/_img/codepen/ground.png");
+    width: 100%;
+    height: 600px;
+    top: 4200px;
+    background-size: cover;
+    position: absolute;
+    
+  }
+  /* middle layer clouds */
+  div#parallax-bg-2 div {
+    background: url("https://greensock.com/_img/codepen/clouds.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 488px;
+    height: 225px;
+    overflow: hidden;
+  }
+  
+  div#bg-2-1 {
+    top: 100px;
+    left: -310px;
+  }
+  div#bg-2-2 {
+    top: 270px;
+    right: -70px;
+  }
+  div#bg-2-3 {
+    top: 870px;
+    left: -300px;
+  }
+  div#bg-2-4 {
+    top: 1120px;
+    right: -130px;
+  }
+  div#bg-2-5 {
+    top: 1620px;
+    left: 140px;
+  }
+  div#bg-2-6 {
+    top: 720px;
+    left: 340px;
+  }
+
+  /* Middle About Box */
+  .about{
+    font-size: larger;
+    top: 720px;
+    left: 340px;
+  }
+  
+  /*background layer clouds */
+  div#parallax-bg-1 div {
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 488px;
+    height: 225px;
+    overflow: hidden;
+  }
+  div#bg-1-1 {
+    background: url("https://greensock.com/_img/codepen/clouds2.png");
+    top: 200px;
+    right: 450px;
+  }
+  div#bg-1-2 {
+    background: url("https://greensock.com/_img/codepen/clouds.png");
+    top: 420px;
+    left: 0px;
+  }
+  div#bg-1-3 {
+    background: url("https://greensock.com/_img/codepen/clouds2.png");
+    top: 850px;
+    right: -290px;
+  }
+  div#bg-1-4 {
+    background: url("https://greensock.com/_img/codepen/clouds.png");
+    top: 1350px;
+    left: 200px;
+  }
+  div#bg-1-5 {
+    background: url("https://greensock.com/_img/codepen/clouds2.png");
+    top: 1200px;
+    left: -200px;
+  }
+  .overlay{
+    width:100vw;
+    height:100vh;
+    box-sizing:border-box;
+    z-index:100;
+    border:15px solid #1d3557;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    position:fixed;
+    top:0;
+
+    }
+    .overlay_{
+      width:100vw;
+      height:100vh;
+      box-sizing:border-box;
+      z-index:100;
+      border:15px solid #1d3557;
+      position:fixed;
+      top:0;
+
+    }
+
+
+    /* .wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  .el {
+    position: absolute;
+    opacity: 1;
+    width: 2px;
+    height: 24vh;
+    margin-top: -12vh;
+    transform-origin: 50% 100%;
+    background: white;
+  } */
+  
