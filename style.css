@@ -38,6 +38,7 @@ body {
     left:0;
     width: 100%;
     padding: 20px 100px;
+    /* background: transparent; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +61,21 @@ body {
     color: black;
     margin-left: 40px;
 
+  }
+
+  .navbar a::before{
+    content: ' ';
+    position: absolute;
+    top:100;
+    left:0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover::before{
+    width: 100%;
   }
 
   .logo img{
@@ -204,7 +220,7 @@ body {
     position: absolute;
     display: block;
     width: 488px;
-    height: 225px;
+    /* height: 225px; */
     overflow: hidden;
   }
   
@@ -238,6 +254,9 @@ body {
     font-size: larger;
     top: 720px;
     left: 340px;
+    backdrop-filter: blur(15px);
+    padding: 30px;
+
   }
   
   /*background layer clouds */
